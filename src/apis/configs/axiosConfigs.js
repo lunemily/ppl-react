@@ -1,9 +1,15 @@
 import axios from "axios";
 import { serverUrl } from "./remoteServerConfigs";
 
+const pplLocation = "East";
+
 export const api = axios.create({
   // withCredentials: true,
   baseURL: serverUrl,
+  headers: {
+    "Content-Type": "application/json",
+    "PPL-Event": pplLocation,
+  },
 });
 
 // defining a custom error handler for all APIs
