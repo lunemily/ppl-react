@@ -1,5 +1,6 @@
 import "./App.css";
 import Home from "./home/Home";
+import * as React from "react";
 
 function App() {
   return (

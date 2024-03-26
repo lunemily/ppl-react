@@ -3,6 +3,7 @@ import { useCookies } from "react-cookie";
 import Auth from "../Auth";
 import LeaderConsole from "./LeaderConsole";
 import ChallengerConsole from "./ChallengerConsole";
+import * as React from "react";
 
 function Home() {
   const [cookies] = useCookies(["loginId", "token", "isLeader", "leaderId"]);

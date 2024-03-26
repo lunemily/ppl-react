@@ -1,9 +1,10 @@
 import "../App.css";
+import * as React from "react";
 
 function LeaderConsole() {
   return (
     <>
-      <p>Leader Console works!</p>
+      <p>Leader Console works!!</p>
     </>
   );
 }

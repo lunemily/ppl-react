@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AuthenticationAPI } from "./apis/authenticationAPI";
 import { useCookies } from "react-cookie";
+import * as React from "react";
 
 const Auth = () => {
   const [input, setInput] = useState({

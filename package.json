@@ -12,6 +12,8 @@
     "react-cookie": "^7.1.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "source-map-loader": "^5.0.0",
+    "typescript": "^3.2.1",
     "web-vitals": "^3.5.2"
   },
   "scripts": {
@@ -19,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --fix **/*.js"
+    "lint": "eslint --fix **/*.ts **/*.tsx"
   },
   "eslintConfig": {
     "extends": [
