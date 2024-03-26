@@ -1,4 +1,4 @@
-import "../App.css";
+import "../App.scss";
 import { useCookies } from "react-cookie";
 import Auth from "../Auth";
 import LeaderConsole from "./LeaderConsole";

@@ -1,0 +1,8 @@
+.form {
+    display: block;
+    margin: 0 auto;
+}
+
+.MuiTextField-root {
+    margin: 0.5em auto !important;
+}

@@ -1,7 +1,6 @@
 import axios from "axios";
 import { serverUrl } from "./remoteServerConfigs";
-
-const pplLocation = "East";
+import { pplLocation } from "../../constants";
 
 export const api = axios.create({
   // withCredentials: true,

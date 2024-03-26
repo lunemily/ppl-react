@@ -1,0 +1,14 @@
+@import "east-theme.css";
+
+h1, h2, h3, h4, h5, h6, .title {
+    font-family: fancy-title, sans-serif;
+}
+
+header {
+    margin-bottom: 1em;
+}
+
+.MuiCard-root {
+    width: 85%;
+    margin: 0 auto;
+}
