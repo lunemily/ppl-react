@@ -1,13 +1,11 @@
 import axios from "axios";
-import { serverUrl } from "./remoteServerConfigs";
-import { pplLocation } from "../../constants";
 
 export const api = axios.create({
   // withCredentials: true,
-  baseURL: serverUrl,
+  baseURL: process.env.REACT_APP_API_ENDPOINT,
   headers: {
     "Content-Type": "application/json",
-    "PPL-Event": pplLocation,
+    "PPL-Event": process.env.REACT_APP_PPL_LOCATION,
   },
 });
 

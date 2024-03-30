@@ -2,9 +2,12 @@ import "./App.scss";
 import Home from "./home/Home";
 import * as React from "react";
 import { AppBar, IconButton, Toolbar, Typography } from "@mui/material";
-import { pplLocation } from "./constants";
 import { LogoutRounded } from "@mui/icons-material";
 import { useCookies } from "react-cookie";
+// PPL-specific styles:
+require(
+  `./theme.${process.env.REACT_APP_PPL_LOCATION ? process.env.REACT_APP_PPL_LOCATION.toString().toLowerCase() : "dev"}.scss`,
+);
 
 function App() {
   const [, , removeCookie] = useCookies([
@@ -21,12 +24,13 @@ function App() {
   }
   return (
     <>
-      <AppBar position="static">
+      <AppBar className="primary" position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <p className={"title"}>
-              PPL {pplLocation} {new Date().getFullYear().toString()}
-            </p>
+            <span className={"title"}>
+              PPL {process.env.REACT_APP_PPL_LOCATION}{" "}
+              {new Date().getFullYear().toString()}
+            </span>
           </Typography>
           <IconButton
             size="large"

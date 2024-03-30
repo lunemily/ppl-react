@@ -1,0 +1,46 @@
+@font-face {
+    font-family: fancy-title;
+    src: url('../assets/fonts/ethnocentric-rg.ttf') format('truetype');
+}
+
+h1, h2, h3, h4, h5, h6, .title {
+    font-family: fancy-title, sans-serif;
+}
+
+html {
+    background-image: url('../assets/images/wallpaper-east.png');
+}
+
+$primary-color: #d91e1e;
+$accent-color: #ffa3a3;
+$warn-color: #830000;
+
+$light-text: #ffffff;
+$dark-text: #000000;
+
+.primary {
+    color: $primary-color;
+}
+
+header.primary, div.primary, button.primary {
+    background-color:  $primary-color !important;
+    color: $light-text !important;
+}
+
+.accent {
+    color: $accent-color;
+}
+
+div.accent {
+    background-color:  $accent-color;
+    color: $dark-text;
+}
+
+.warn {
+    color: $warn-color;
+}
+
+div.warn {
+    background-color:  $warn-color;
+    color: $light-text;
+}

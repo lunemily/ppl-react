@@ -5,7 +5,7 @@ import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { Box, Button, TextField } from "@mui/material";
-import "./Auth.css";
+import "./Auth.scss";
 
 const Auth = () => {
   const [input, setInput] = useState({
@@ -68,7 +68,11 @@ const Auth = () => {
             onChange={handleInput}
           />
           <br />
-          <Button variant="contained" onClick={handleSubmitEvent}>
+          <Button
+            className="primary"
+            variant="contained"
+            onClick={handleSubmitEvent}
+          >
             Submit
           </Button>
         </Box>

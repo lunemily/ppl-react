@@ -26,7 +26,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --fix **/*.ts **/*.tsx"
+    "lint": "eslint --fix **/*.ts **/*.tsx",
+    "start:east": "env-cmd -f .env.east.staging npm run-script start",
+    "build:east": "env-cmd -f .env.east.prod npm run-script build",
+    "start:west": "env-cmd -f .env.west.staging npm run-script start",
+    "build:west": "env-cmd -f .env.west.prod npm run-script build",
+    "start:aus": "env-cmd -f .env.aus.staging npm run-script start",
+    "build:aus": "env-cmd -f .env.aus.prod npm run-script build"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +53,7 @@
     ]
   },
   "devDependencies": {
+    "env-cmd": "^10.1.0",
     "eslint": "^8.57.0",
     "prettier": "3.2.5"
   }
