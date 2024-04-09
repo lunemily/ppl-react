@@ -1,11 +1,11 @@
 import "../App.scss";
 import { useCookies } from "react-cookie";
 import Auth from "../Auth";
-import LeaderConsole from "./LeaderConsole";
-import ChallengerConsole from "./ChallengerConsole";
+import LeaderDashboard from "./LeaderDashboard";
+import ChallengerDashboard from "./ChallengerDashboard";
 import * as React from "react";
 
-function Home() {
+function Dashboard() {
   const [cookies] = useCookies(["loginId", "token", "isLeader", "leaderId"]);
 
   function isAuthenticated() {
@@ -16,13 +16,13 @@ function Home() {
     if (cookies.isLeader) {
       return (
         <>
-          <LeaderConsole />
+          <LeaderDashboard />
         </>
       );
     } else {
       return (
         <>
-          <ChallengerConsole />
+          <ChallengerDashboard />
         </>
       );
     }
@@ -35,4 +35,4 @@ function Home() {
   }
 }
 
-export default Home;
+export default Dashboard;
