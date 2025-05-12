@@ -11,7 +11,7 @@ import HelpRounded from "@mui/icons-material/HelpRounded";
 import ChromeReaderModeRounded from "@mui/icons-material/ChromeReaderModeRounded";
 import Paper from "@mui/material/Paper";
 import TrainerCard from "./TrainerCard";
-import HowToChallenge from "./HowToChallenge";
+import HowTo from "./HowTo";
 
 // PPL-specific styles:
 require(
@@ -46,10 +46,10 @@ function App() {
             <TrainerCard />
           </>
         );
-      case "howtochallenge":
+      case "howto":
         return (
           <>
-            <HowToChallenge />
+            <HowTo />
           </>
         );
       default:
@@ -111,7 +111,7 @@ function App() {
           <BottomNavigationAction
             className="primary"
             label="How To Challenge"
-            value="howtochallenge"
+            value="howto"
             icon={<HelpRounded />}
           />
         </BottomNavigation>
